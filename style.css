@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+}
+
+body {
+    background-color: #0b0b3c;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #12123d;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.left {
+    font-size: 2rem;
+    font-weight: bold;
+    border: 3px solid #385f5f;
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.right ul {
+    display: flex;
+    list-style: none;
+}
+
+.right ul li {
+    margin: 0 15px;
+}
+
+.right ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    transition: all 0.3s ease;
+}
+
+.right ul li a:hover {
+    font-size: 1.2rem;
+    color: #036e6e;
+    transform: scale(1.1);
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.intro {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: blueviolet;
+}
+
+.cta, .cta-secondary {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta {
+    background-color: #036e6e;
+    color: whitesmoke;
+}
+
+.cta:hover {
+    background-color: #024d4d;
+}
+
+.cta-secondary {
+    background-color: transparent;
+    border: 2px solid #036e6e;
+    color: #036e6e;
+}
+
+.cta-secondary:hover {
+    background-color: #036e6e;
+    color: whitesmoke;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid #03e9e9;
+    display: block;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00c3c3;
+}
+
+.section p, .section ul {
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.section ul li {
+    margin: 10px 0;
+}
+
+.project-card {
+    background-color: #12123d;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-link {
+    color: #00c3c3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #385f5f;
+    color: whitesmoke;
+}
+
+form button {
+    background-color: #036e6e;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #024d4d;
+}
+
+footer {
+    background-color: #12123d;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+.hero-image {
+    margin: 20px auto;
+}
+@media (max-width: 768px) {
+    .hero-image img {
+        max-width: 80%;
+        margin: 20px auto;
+    }
+}
